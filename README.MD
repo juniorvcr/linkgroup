@@ -1,0 +1,1 @@
+Alguns icones estão na pasta para serem usados, porém você pode achar mais deles em: https://ionic.io/ionicons

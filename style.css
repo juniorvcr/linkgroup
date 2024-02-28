@@ -1,0 +1,155 @@
+:root {
+  --text-color: white;
+  --bg-color: rgba(255, 255, 255, 0.2);
+  --border-color: white;
+  --bg-url: url(./bg-desktop.jpg);
+  --switch-bg: url(./moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-color: rgba(0, 0, 0, 0.5);
+  --border-color: black;
+  --bg-url: url(./bg-desktop-light.jpg);
+  --switch-bg: url(./sun.svg);
+}
+
+body {
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.corpo {
+  width: 588px;
+  height: 712px;
+  margin-top: 6rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#switch {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg) no-repeat center;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translatey(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background-color: var(--bg-color);
+  border: var(--border-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 999px;
+}
+
+.self {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+}
+
+.selflink {
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 28px;
+}
+
+.links > a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  width: 540px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: 500ms;
+}
+
+.links > a:hover {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+}
+
+.redesociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 32px;
+}
+
+.redesociais a {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.redesociais a:hover {
+  background-color: var(--bg-color);
+  transition: 500ms;
+}
+
+ion-icon {
+  color: var(--text-color);
+  font-size: 40px;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.heart {
+  font-size: 20px;
+}
