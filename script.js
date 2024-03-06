@@ -5,9 +5,9 @@ function toggleMode() {
    const img = document.querySelector('.self')
    
    if(html.classList.contains('light')) {
-       img.setAttribute('src', '/avatar-light.png')
+       img.setAttribute('src', './imgs/avatar-light.png')
     } else {
-       img.setAttribute('src', '/avatar.png')
+       img.setAttribute('src', './imgs/avatar.png')
    }
 
    const alt = document.querySelector('.self')
